@@ -10,10 +10,10 @@ from enum import Enum
 
 class MopsEvent:
     """Simple event class with time when event should occur and event type."""
-    def __init__(self, time, event_type, packet_idx, router_idx):
+    def __init__(self, time, event_type, packet, router_idx):
         self.time = time
         self.type = event_type
-        self.packet_idx = packet_idx
+        self.packet = packet
         self.router_idx = router_idx
 
     def __lt__(self, other):  # if you want to know something about this write to me directly

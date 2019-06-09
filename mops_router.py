@@ -7,6 +7,8 @@ class MopsRouter:
        # self.event_queue = PriorityQueue(0)
         self.buffer_size = buffer_size
         self.packets_lost = 0
+        self.delays = []
+        self.waiting = []
         self.busy = False
         self.buffer = Queue(buffer_size)
 
